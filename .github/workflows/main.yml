@@ -19,6 +19,6 @@ jobs:
       - name: Copy files to server
         run: rsync . $SSH_USERNAME:$SSH_PASSWORD@minecraft.homeunix.org:/home/cchampou/allixo-docker
         env:
-          SSH_USERNAME: {{ secrets.ALLIXO_USERNAME }}
-          SSH_PASSWORD: {{ secrets.ALLIXO_PASSWORD }}
+          SSH_USERNAME: ${{ secrets.ALLIXO_USERNAME }}
+          SSH_PASSWORD: ${{ secrets.ALLIXO_PASSWORD }}
 
