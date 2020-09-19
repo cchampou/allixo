@@ -16,6 +16,9 @@ jobs:
       - name: List files
         run: ls
 
+      - name: Copy files to server
+        run: rsync . cchampou@minecraft.homeunix.org:/home/cchampou/allixo-docker
+      
         #- name: Run a multi-line script
         #run: |
           #  echo Add other actions to build,
