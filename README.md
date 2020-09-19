@@ -1,1 +1,1 @@
-Allixo Server Configuration
+# Allixo Server Configuration
